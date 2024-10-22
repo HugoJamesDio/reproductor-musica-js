@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    /* height: 100%; */
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(97, 96, 96);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Player */
+.player{
+    /* max-width: 768px; */
+    min-width: 320px;
+    background-image: linear-gradient(black, gray); /* degradado */
+    border-radius: 1rem;
+    padding: 2rem;
+    color: white;
+    box-shadow: 2xp 2px 3px black;
+}
+
+/* title */
+.title{
+    margin-top: 0;
+    text-align: center;
+}
+
+/* cover */
+.cover{
+    width: 300px;
+    height: 200px;
+    /* height: auto; */
+    border-radius: 0.3rem;
+    display: block; /* 'para centrar' idk */
+    margin: 0 auto 1rem auto; /* arriba derecha abajo izquierda */
+
+}
+
+/* progress */
+.progress-container{
+    /* De manera predeterminada, el ancho ya es 100%, así que no hacer falta ponerlo */
+    height: 0.5rem;
+    background-color: lightblue;
+    margin-bottom: 1rem ;
+}
+.progress{
+    background-color: goldenrod;
+    /* width: 40%; */
+    width: 0;
+    height: 100%; /* 100% del ancho total del progress-container */
+}
+/* controls */
+.controls{
+    display: flex;
+    justify-content: space-evenly; /* espacio repartido */
+
+}
+.controls button{
+    background-color: transparent;
+    border: none;
+}
+.controls i{ /* i, es como tal el ícono */
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 0.6rem;
+}
+
+/* songs */
+.songs{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.songs li{
+    margin-bottom: 0.8rem;
+}
+.songs a{
+    color: lightgray;
+    text-decoration: none;
+}
+.songs a.active{
+    color: white;
+    font-weight: bold;
+}

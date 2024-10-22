@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <!-- íconos -->
+    <script src="https://kit.fontawesome.com/f8c36ce0e4.js" crossorigin="anonymous"></script>
+
+    <title>Music Player</title>
+</head>
+<body>
+    <!-- Player -->
+    <main class="player">
+        <!-- Title -->
+        <h1 class="title" id="title"></h1>
+
+        <!-- Cover  -->
+        <img src="" alt="" class="cover" id="cover">
+
+        <!-- Audio -->
+        <audio src="" id="audio"></audio>
+        
+        <!-- Progress bar -->
+        <div class="progress-container" id="progress-container">
+            <section class="progress" id="progress"></section>
+        </div>
+
+        <!-- Controls -->
+        <section class="controls">
+            <!-- previus -->
+            <button class="prev">
+                <i id="prev" class="fa-solid fa-backward"></i>
+            </button>
+            <!-- play -->
+            <button class="play">
+                <i id="play" class="fa-solid fa-play"></i>
+            </button>
+            <!-- next -->
+            <button class="next">
+                <i id="next" class="fa-solid fa-forward"></i>
+            </button>
+        </section>
+
+        <!-- song list -->
+        <ul class="songs" id="songs">
+            <!-- <li><a class="active" href="#">Song 1</a></li>
+            <li><a href="#">Song 2</a></li>
+            <li><a href="#">Song 3</a></li> -->
+        </ul>
+    </main>
+    
+    <script src="main.js"></script>
+</body>
+</html>
